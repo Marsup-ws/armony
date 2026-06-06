@@ -19,14 +19,14 @@ export default function ContactForm() {
   };
 
   const inputClass =
-    "w-full bg-[#fccf92] border border-[#3a0000] rounded-md px-4 py-3" +
-    "placeholder:text-[#555] focus:outline-none focus:border-[#cc0000] focus:ring-1 " +
-    "focus:ring-[#cc0000] transition-colors";
+    "w-full bg-[#262626] border border-[#6E5F50] rounded-md px-4 py-3" +
+    "placeholder:text-[#555] focus:outline-none focus:border-[#fad8b6] focus:ring-1 " +
+    "focus:ring-[#6E5F50] transition-colors";
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full max-w-xl mx-auto">
       <div>
-        <label className="font-display text-lg text-[#cc0000] tracking-widest block mb-2">
+        <label className="font-display text-lg text-[#ffd8b6] tracking-widest block mb-2">
           Objet
         </label>
         <input
@@ -40,7 +40,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="font-display text-lg text-[#cc0000] tracking-widest block mb-2">
+        <label className="font-display text-lg text-[#ffd8b6] tracking-widest block mb-2">
           Description
         </label>
         <textarea
@@ -64,7 +64,7 @@ export default function ContactForm() {
         <button
           type="button"
           onClick={() => fileRef.current?.click()}
-          className="flex items-center gap-2 text-[#888] hover:text-[#cc0000] transition-colors text-sm"
+          className="flex items-center gap-2 text-[#fad8b6] hover:text-[#FFB400] transition-colors text-sm"
         >
           <Paperclip size={16} />
           {fileName ? fileName : "Ajouter une pièce jointe"}
@@ -78,9 +78,9 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="flex items-center justify-center gap-2 bg-[#cc0000] hover:bg-[#ff2222]
-          text-[#e67300] font-display text-xl tracking-widest py-3 rounded-md transition-colors
-          shadow-lg shadow-red-900/30 mt-2"
+        className="flex items-center justify-center gap-2 bg-[#100000] hover:bg-[#300000]
+          text-[#fad8b6] font-display text-xl tracking-widest py-3 rounded-md transition-colors
+          shadow-lg shadow-white-900/30 mt-2"
       >
         <Send size={18} />
         {sent ? "Ouverture du client mail…" : "Envoyer"}

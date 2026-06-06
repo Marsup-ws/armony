@@ -43,7 +43,7 @@ export default function AccueilPage() {
             <div
               key={i}
               className="flex-1 h-full overflow-hidden relative"
-              style={{ borderRight: i < 4 ? "1px solid #3a0000" : "none" }}
+              style={{ borderRight: i < 4 ? "1px solid #000000" : "none" }}
             >
               <div
                 className="w-full h-full transition-all duration-700 ease-out"
@@ -81,7 +81,7 @@ export default function AccueilPage() {
             <div
               key={i}
               className="flex-1 h-full overflow-hidden relative"
-              style={{ borderRight: i < 4 ? "1px solid #3a0000" : "none" }}
+              style={{ borderRight: i < 4 ? "1px solid #000000" : "none" }}
             >
               <div
                 className="w-full h-full transition-all duration-700 ease-out"
@@ -89,7 +89,9 @@ export default function AccueilPage() {
                   opacity: visible ? 1 : 0,
                   transform: visible
                     ? "translateY(0)"
-                    : "translateX(-80px)",
+                    : fromBottom
+                    ? "translateY(80px)"
+                    : "translateY(-80px)",
                 }}
               >
                 <img
