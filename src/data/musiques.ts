@@ -10,13 +10,13 @@ export const musiques: Musique[] = [
     id: "1",
     name: "Funk to the future",
     avatar: "/images/cover/funk_to_future.jpg",
-    file: "/audio/doobie.mp3",
+    file: "/audio/girl.mp3",
   },
   {
     id: "2",
     name: "Someone will go",
     avatar: "/images/cover/someone_will_go.jpg",
-    file: "/audio/callings.mp3",
+    file: "/audio/girl.mp3",
   },
     {
     id: "3",
@@ -28,19 +28,19 @@ export const musiques: Musique[] = [
     id: "4",
     name: "A star is not born",
     avatar: "/images/cover/shallow.jpg",
-    file: "/audio/shallow.mp3",
+    file: "/audio/girl.mp3",
   },
     {
     id: "5",
     name: "Every breath you make",
     avatar: "/images/cover/police.jpg",
-    file: "/audio/police.mp3",
+    file: "/audio/girl.mp3",
   },
   {
     id: "6",
     name: "You know you aren't good",
     avatar: "/images/cover/you_know_you_arent_good.jpg",
-    file: "/audio/whinehouse.mp3",
+    file: "/audio/girl.mp3",
   },
     {
     id: "7",

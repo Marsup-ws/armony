@@ -1,0 +1,3 @@
+www.mars7up.com {
+    reverse_proxy nextjs-app:3000
+}
